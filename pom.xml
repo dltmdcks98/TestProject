@@ -28,6 +28,7 @@
             <optional>true</optional>
         </dependency>
         <dependency>
+<!--            필수적인 추가-->
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>

@@ -10,6 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>testproject</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <version>1.0.0</version>
     <name>TestProject</name>
     <description>TestProject</description>
@@ -28,7 +29,6 @@
             <optional>true</optional>
         </dependency>
         <dependency>
-<!--            필수적인 추가-->
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
@@ -58,3 +58,4 @@
     </build>
 
 </project>
+

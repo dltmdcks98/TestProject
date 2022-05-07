@@ -2,25 +2,33 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.6.7</version>
+        <version>2.5.1</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
+<!--    프로젝트 설명-->
     <groupId>com.example</groupId>
     <artifactId>testproject</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <version>1.0.0</version>
+    <packaging>jar</packaging>
+
     <name>TestProject</name>
     <description>TestProject</description>
+
+
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+<!--            부모에서 상속받음 => 2.5.1-->
         </dependency>
 
         <dependency>
@@ -28,15 +36,18 @@
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+<!--            test에서만 사용되는 라이브러리-->
         </dependency>
     </dependencies>
 
@@ -58,4 +69,3 @@
     </build>
 
 </project>
-

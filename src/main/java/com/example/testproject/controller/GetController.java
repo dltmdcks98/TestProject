@@ -1,5 +1,6 @@
 package com.example.testproject.controller;
 
+import com.example.testproject.dto.MemberDTO;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -54,5 +55,12 @@ public class GetController {
         });
         return sb.toString();
     }
+
+    //http://localhost:8080/api/v1/get-api/request3?name=LSC&email=dltmdcks98@gmail.com&organizaion=sungkyul
+    @GetMapping(value = "/request3")
+    public String getRequestParam3(MemberDTO memberDTO){
+        return memberDTO.toString();
+    }
+
 
 }

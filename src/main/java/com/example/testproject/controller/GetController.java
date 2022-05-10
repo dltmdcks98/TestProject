@@ -29,14 +29,14 @@ public class GetController {
 
     //http://localhost:8080/api/v1/get-api/variable2/{String 값}
     @GetMapping(value = "variable2/{variable}")
-    public String getVariable2(@PathVariable("variable") String var, @PathVariable String var2){//받는 값이 여러개 일때
+    public String getVariable2(@PathVariable("variable") String var){//받는 값이 여러개 일때
         return var;
     }
 
-    //http://localhost:8080/api/v1/get-api/variable1?
-    //name = LSC
-    //email = dltmdcks98@gmail.com
-    //organization = sungkyul
+    //http://localhost:8080/api/v1/get-api/request1?
+    // name=LSC&
+    // email=dltmdcks98@gmail.com&
+    // organization=sungkyul
     @GetMapping(value = "/request1")
     public String getRequestParam1(
             @RequestParam String name,
